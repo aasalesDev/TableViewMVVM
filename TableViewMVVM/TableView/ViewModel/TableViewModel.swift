@@ -28,6 +28,6 @@ class TableViewModel {
     }
     
     var heightForRowAt: CGFloat {
-        return 150
+        return 100
     }
 }

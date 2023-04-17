@@ -19,5 +19,11 @@ class ViewController: UIViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
     }
+    
+    @IBAction func generateSFSymbolsButtonPressed(_ sender: UIButton) {
+        if let vc = UIStoryboard(name: String(describing: SFSymbolsViewController.self), bundle: nil).instantiateViewController(identifier: String(describing: SFSymbolsViewController.self)) as? SFSymbolsViewController {
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
